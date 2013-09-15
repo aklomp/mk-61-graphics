@@ -382,6 +382,9 @@
 		<!-- Button div -->
 		<g id="button-div">
 			<use xlink:href="#base-grey" />
+			<path d="m 10,10 10,0" stroke-width="2" fill="none" stroke-opacity="0.85" stroke="black" />
+			<circle cx="15" cy="6" r="1" stroke="none" fill-opacity="0.85" fill="black" />
+			<circle cx="15" cy="14" r="1" stroke="none" fill-opacity="0.85" fill="black" />
 		</g>
 
 		<!-- Button 4 -->
