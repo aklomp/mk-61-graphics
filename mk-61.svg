@@ -240,6 +240,27 @@
 			<use xlink:href="#glint" />
 		</g>
 
+		<!-- Button F -->
+		<g id="button-f">
+			<use xlink:href="#base-yellow" />
+		</g>
+		<!-- Button ShG-right -->
+		<g id="button-shg-right">
+			<use xlink:href="#base-dark" />
+		</g>
+		<!-- Button ShG-left -->
+		<g id="button-shg-left">
+			<use xlink:href="#base-dark" />
+		</g>
+		<!-- Button V/O -->
+		<g id="button-v-o">
+			<use xlink:href="#base-dark" />
+		</g>
+		<!-- Button S/P -->
+		<g id="button-s-p">
+			<use xlink:href="#base-dark" />
+		</g>
+
 	</defs>
 </svg>
 <!--
