@@ -426,6 +426,7 @@
 		<!-- Button 3 -->
 		<g id="button-3">
 			<use xlink:href="#base-grey" />
+			<path d="m 11,12 c 0,0 0,2 0,1 0,0 0,1 2,1 1,0 1,0 3,0 2,0 2,-1 2,-2 0,0 0,-2 -1,-2 -1,0 -1,0 -2,0 -1,0 -1,0 -1,0 m -3,-2 c 0,0 0,-2 0,-1 0,0 0,-1 2,-1 1,0 1,0 3,0 2,0 2,1 2,2 0,0 0,2 -1,2" stroke-width="2" fill="none" stroke-opacity="0.85" stroke="black" />
 		</g>
 		<!-- Button swap -->
 		<g id="button-swap">
