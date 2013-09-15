@@ -240,6 +240,42 @@
 			<use xlink:href="#glint" />
 		</g>
 
+		<!-- Clip path to clip to a button's char area -->
+		<clipPath clipPathUnits="userSpaceOnUse" id="clip-chararea">
+			<rect width="30" height="10" x="0" y="5" />
+		</clipPath>
+		<!-- Clip path for long slash -->
+		<clipPath clipPathUnits="userSpaceOnUse" id="clip-chararea-long">
+			<rect width="30" height="11" x="0" y="4" />
+		</clipPath>
+
+		<!-- Char B -->
+		<path id="char-b" d="m 12,6 -7,0 0,8 6,0 a2,2 0 0,0 0,-4 l -6,0" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char F -->
+		<path id="char-f" d="m 12,10 5,0 m -5,5 0,-9 7,0" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char P -->
+		<path id="char-p" d="M 5,15 5,6 13,6 l 0,9" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char Sh -->
+		<path id="char-sh" d="M 6,7 6,15 14,15 14,7 M 10,7 10,15" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char G -->
+		<path id="char-g" d="M 5,16 5,8 12,8" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char K -->
+		<path id="char-k" d="m 14,10 6,6 m -8,-6 2,0 6,-6 m -8,1 0,10" clip-path="url(#clip-chararea)" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char V -->
+		<path id="char-v" d="m 11,10 a2,2 0 0,0 0,-4 l -6,0 0,8 6,0 a2,2 0 0,0 0,-4 l -6,0" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char X -->
+		<path id="char-x" d="m 8,4 -7,12 m 0,-12 7,12" clip-path="url(#clip-chararea)" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char narrow P -->
+		<path id="char-narrow-p" d="M 5,15 5,6 8,6 l 0,9" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char narrow X -->
+		<path id="char-narrow-x" d="M 5,15 8,5 M 8,15 5,5" stroke-width="2" stroke-linecap="square" fill="none" stroke-opacity="0.85" clip-path="url(#clip-chararea)" />
+		<!-- Char small arrow -->
+		<path id="char-arrow" d="m 11,9 0,2 5,0 0,1 4,-2 -4,-2 0,1 z" stroke="none" fill-opacity="0.85" />
+		<!-- Char slash -->
+		<path id="char-slash" d="m 10,3 -4,13" clip-path="url(#clip-chararea)" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<!-- Char longslash -->
+		<path id="char-longslash" d="m 9,3 -8,26" clip-path="url(#clip-chararea-long)" stroke-width="2" fill="none" stroke-opacity="0.85" />
+
 		<!-- Button F -->
 		<g id="button-f">
 			<use xlink:href="#base-yellow" />
