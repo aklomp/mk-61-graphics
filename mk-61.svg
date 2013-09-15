@@ -345,6 +345,27 @@
 			<use xlink:href="#base-grey" />
 		</g>
 
+		<!-- Button 0 -->
+		<g id="button-0">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button period -->
+		<g id="button-period">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button sign -->
+		<g id="button-sign">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button VP -->
+		<g id="button-vp">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button SX -->
+		<g id="button-sx">
+			<use xlink:href="#base-red" />
+		</g>
+
 	</defs>
 </svg>
 <!--
