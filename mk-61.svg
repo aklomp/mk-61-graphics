@@ -453,6 +453,11 @@
 		<!-- Button sign -->
 		<g id="button-sign">
 			<use xlink:href="#base-grey" />
+			<g stroke="black">
+				<use xlink:href="#char-slash" />
+				<use xlink:href="#char-slash" x="14.5" />
+				<path d="m 11,10 8,0" stroke-width="2" fill="none" stroke-opacity="0.85" />
+			</g>
 		</g>
 		<!-- Button VP -->
 		<g id="button-vp">
