@@ -302,10 +302,25 @@
 		<!-- Button V/O -->
 		<g id="button-v-o">
 			<use xlink:href="#base-dark" />
+			<g stroke-width="2" fill="none" stroke-opacity="0.85" stroke="white">
+				<use x="8" y="0" xlink:href="#char-longslash" />
+				<!-- small V -->
+				<path d="m 8,9 c 1,0 2,-1 2,-1 l 0,-2 c 0,0 0,-1 -1,-1 -1,0 -2,0 -2,0 l 0,8 2,0 c 0,0 1,0 1,-1 0,-1 0,-2 0,-2 0,0 -1,-1 -2,-1 -1,0 -1,0 -1,0" />
+				<!-- small O -->
+				<path d="m 20,9 0,3 c 0,0 0,2 1,2 1,0 1,0 1,0 1,0 1,-2 1,-2 l 0,-3 c 0,0 0,-2 -1,-2 -1,0 -1,0 -1,0 -1,0 -1,2 -1,2 z" />
+			</g>
 		</g>
+
 		<!-- Button S/P -->
 		<g id="button-s-p">
 			<use xlink:href="#base-dark" />
+			<g stroke-width="2" fill="none" stroke-opacity="0.85" stroke="white">
+				<use x="8" y="0" xlink:href="#char-longslash" />
+				<!-- small S -->
+				<path d="m 10,11 0,1 c 0,0 0,1 -1,1 0,0 0,0 -1,0 -1,0 -1,-2 -1,-2 l 0,-4 c 0,0 0,-2 1,-2 0,0 0,0 1,0 1,0 1,1 1,1 l 0,1" />
+				<!-- small P -->
+				<path d="m 20,15 0,-8 3,0 0,8" />
+			</g>
 		</g>
 
 		<!-- Button K -->
