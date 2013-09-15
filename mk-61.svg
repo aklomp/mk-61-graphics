@@ -303,6 +303,27 @@
 			<use xlink:href="#base-grey" />
 		</g>
 
+		<!-- Button 4 -->
+		<g id="button-4">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button 5 -->
+		<g id="button-5">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button 6 -->
+		<g id="button-6">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button plus -->
+		<g id="button-plus">
+			<use xlink:href="#base-grey" />
+		</g>
+		<!-- Button mul -->
+		<g id="button-mul">
+			<use xlink:href="#base-grey" />
+		</g>
+
 	</defs>
 </svg>
 <!--
