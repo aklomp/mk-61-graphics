@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="20" width="30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<!-- Gradient on the button glint (highlight) -->
+		<linearGradient id="gradient-glint" x1="13" y1="7" x2="15" y2="10" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#ffffff" stop-opacity="1" offset="0" />
+			<stop stop-color="#ffffff" stop-opacity="0" offset="1" />
+		</linearGradient>
+
+		<linearGradient id="gradient-grey-buttonfill" x1="0" y1="0" x2="30" y2="20" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#b5b9b7" offset="0" />
+			<stop stop-color="#999c9b" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-grey-top-left" x1="0"  y1="3"  x2="3"  y2="0" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#d0d0d0" offset="0" />
+			<stop style="stop-color:#f0f0f0" offset="0.5" />
+			<stop style="stop-color:#d0d0d0" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-grey-top-right" x1="27" y1="0"  x2="30" y2="3" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#d0d0d0" offset="0" />
+			<stop style="stop-color:#707070" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-grey-bottom-left" x1="0"  y1="17" x2="3"  y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#d0d0d0" offset="0" />
+			<stop style="stop-color:#707070" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-grey-bottom-right" x1="30" y1="17" x2="27" y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#707070" offset="0" />
+			<stop style="stop-color:#606060" offset="0.5" />
+			<stop style="stop-color:#707070" offset="1" />
+		</linearGradient>
+
+		<linearGradient id="gradient-dark-buttonfill" x1="0" y1="0" x2="30" y2="20" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#383A43" offset="0" />
+			<stop stop-color="#2C2D34" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-dark-top-left" x1="0"  y1="3"  x2="3"  y2="0" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#808080" offset="0" />
+			<stop style="stop-color:#e0e0e0" offset="0.5" />
+			<stop style="stop-color:#808080" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-dark-top-right" x1="27" y1="0"  x2="30" y2="3" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#808080" offset="0" />
+			<stop style="stop-color:#606060" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-dark-bottom-left" x1="0"  y1="17" x2="3"  y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#808080" offset="0" />
+			<stop style="stop-color:#606060" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-dark-bottom-right" x1="30" y1="17" x2="27" y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#606060" offset="0" />
+			<stop style="stop-color:#505050" offset="0.5" />
+			<stop style="stop-color:#606060" offset="1" />
+		</linearGradient>
+
+		<linearGradient id="gradient-blue-buttonfill" x1="0" y1="0" x2="30" y2="20" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#358FB5" offset="0" />
+			<stop stop-color="#3184A7" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-blue-top-left" x1="0"  y1="3"  x2="3"  y2="0" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#c7dee8" offset="0" />
+			<stop style="stop-color:#e9f1f4" offset="0.5" />
+			<stop style="stop-color:#c7dee8" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-blue-top-right" x1="27" y1="0"  x2="30" y2="3" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#c7dee8" offset="0" />
+			<stop style="stop-color:#075474" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-blue-bottom-left" x1="0"  y1="17" x2="3"  y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#c7dee8" offset="0" />
+			<stop style="stop-color:#075474" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-blue-bottom-right" x1="30" y1="17" x2="27" y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#075474" offset="0" />
+			<stop style="stop-color:#156180" offset="0.5" />
+			<stop style="stop-color:#075474" offset="1" />
+		</linearGradient>
+
+		<linearGradient id="gradient-yellow-buttonfill" x1="0" y1="0" x2="30" y2="20" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#ecdf73" offset="0"/>
+			<stop stop-color="#d2c342" offset="1"/>
+		</linearGradient>
+		<linearGradient id="gradient-yellow-top-left" x1="0"  y1="3"  x2="3"  y2="0" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#ffffb6" offset="0" />
+			<stop style="stop-color:#ffffd0" offset="0.5" />
+			<stop style="stop-color:#ffffb6" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-yellow-top-right" x1="27" y1="0"  x2="30" y2="3" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#ffffb6" offset="0" />
+			<stop style="stop-color:#9c8f35" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-yellow-bottom-left" x1="0"  y1="17" x2="3"  y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#ffffb6" offset="0" />
+			<stop style="stop-color:#9c8f35" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-yellow-bottom-right" x1="30" y1="17" x2="27" y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#9c8f35" offset="0" />
+			<stop style="stop-color:#827941" offset="0.5" />
+			<stop style="stop-color:#9c8f35" offset="1" />
+		</linearGradient>
+
+		<linearGradient id="gradient-red-buttonfill" x1="0" y1="0" x2="30" y2="20" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#cc3327" offset="0"/>
+			<stop stop-color="#a3291f" offset="1"/>
+		</linearGradient>
+		<linearGradient id="gradient-red-top-left" x1="0"  y1="3"  x2="3"  y2="0" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#e48780" offset="0" />
+			<stop style="stop-color:#f4c1bd" offset="0.5" />
+			<stop style="stop-color:#e48780" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-red-top-right" x1="27" y1="0"  x2="30" y2="3" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#e48780" offset="0" />
+			<stop style="stop-color:#601414" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-red-bottom-left" x1="0"  y1="17" x2="3"  y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#e48780" offset="0" />
+			<stop style="stop-color:#601414" offset="1" />
+		</linearGradient>
+		<linearGradient id="gradient-red-bottom-right" x1="30" y1="17" x2="27" y2="20" gradientUnits="userSpaceOnUse">
+			<stop style="stop-color:#601414" offset="0" />
+			<stop style="stop-color:#471013" offset="0.5" />
+			<stop style="stop-color:#601414" offset="1" />
+		</linearGradient>
+
+		<!-- Base rectangle as a clip path -->
+		<clipPath id="clip-base">
+			<rect width="30" height="20" rx="3.5" ry="3.5" />
+		</clipPath>
+
+		<!-- This is the base rectangle shape, un-filled -->
+		<g id="base">
+			<rect y="-0.4" x="-0.4" height="20.8" width="30.8" rx="3.5" ry="3.5" />
+		</g>
+
+		<!-- Glint line on inside -->
+		<g id="glint">
+			<rect y="1" x="1" height="18" width="28" rx="2.5" ry="2.5" style="fill:none;stroke-width:0.2;stroke:url(#gradient-glint);stroke-opacity:0.85" />
+		</g>
+
+		<!-- Black hairline outline -->
+		<rect id="hairline" x="-0.4" y="-0.4" width="30.8"  height="20.8" rx="3.9" ry="3.9" style="fill:black" />
+
+		<!-- Base grey rectangle -->
+		<g id="base-grey">
+			<use xlink:href="#hairline" />
+			<g clip-path="url(#clip-base)">
+				<!-- Bars on top and bottom -->
+				<rect width="3"  height="16" x="0"  y="2"  style="fill:#d0d0d0;stroke:none" />
+				<rect width="3"  height="16" x="27" y="2"  style="fill:#707070;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="17" style="fill:#707070;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="0"  style="fill:#d0d0d0;stroke:none" />
+				<!-- Corners, gradient -->
+				<rect width="5"  height="5"  x="0"  y="0"  style="fill:url(#gradient-grey-top-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="0"  style="fill:url(#gradient-grey-top-right);stroke:none" />
+				<rect width="5"  height="5"  x="0"  y="15" style="fill:url(#gradient-grey-bottom-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="15" style="fill:url(#gradient-grey-bottom-right);stroke:none" />
+				<!-- Center filling -->
+				<rect opacity="1" x="1" y="1" height="18" width="28" rx="2.5" ry="2.5" stroke-width="1" stroke="none" fill="url(#gradient-grey-buttonfill)" />
+			</g>
+			<use xlink:href="#glint" />
+		</g>
+
+		<!-- Base dark rectangle -->
+		<g id="base-dark">
+			<use xlink:href="#hairline" />
+			<g clip-path="url(#clip-base)">
+				<!-- Bars on top and bottom -->
+				<rect width="3"  height="16" x="0"  y="2"  style="fill:#808080;stroke:none" />
+				<rect width="3"  height="16" x="27" y="2"  style="fill:#606060;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="17" style="fill:#606060;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="0"  style="fill:#808080;stroke:none" />
+				<!-- Corners, gradient -->
+				<rect width="5"  height="5"  x="0"  y="0"  style="fill:url(#gradient-dark-top-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="0"  style="fill:url(#gradient-dark-top-right);stroke:none" />
+				<rect width="5"  height="5"  x="0"  y="15" style="fill:url(#gradient-dark-bottom-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="15" style="fill:url(#gradient-dark-bottom-right);stroke:none" />
+				<!-- Center filling -->
+				<rect opacity="1" x="1" y="1" height="18" width="28" rx="2.5" ry="2.5" stroke-width="1" stroke="none" fill="url(#gradient-dark-buttonfill)" />
+			</g>
+			<use xlink:href="#glint" />
+		</g>
+
+		<!-- Base yellow rectangle -->
+		<g id="base-yellow">
+			<use xlink:href="#hairline" />
+			<g clip-path="url(#clip-base)">
+				<!-- Bars on top and bottom -->
+				<rect width="3"  height="16" x="0"  y="2"  style="fill:#ffffb6;stroke:none" />
+				<rect width="3"  height="16" x="27" y="2"  style="fill:#9c8f35;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="17" style="fill:#9c8f35;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="0"  style="fill:#ffffb6;stroke:none" />
+				<!-- Corners, gradient -->
+				<rect width="5"  height="5"  x="0"  y="0"  style="fill:url(#gradient-yellow-top-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="0"  style="fill:url(#gradient-yellow-top-right);stroke:none" />
+				<rect width="5"  height="5"  x="0"  y="15" style="fill:url(#gradient-yellow-bottom-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="15" style="fill:url(#gradient-yellow-bottom-right);stroke:none" />
+				<!-- Center filling -->
+				<rect opacity="1" x="1" y="1" height="18" width="28" rx="2.5" ry="2.5" stroke-width="1" stroke="none" fill="url(#gradient-yellow-buttonfill)" />
+			</g>
+			<use xlink:href="#glint" />
+		</g>
+
+		<!-- Base blue rectangle -->
+		<g id="base-blue">
+			<use xlink:href="#hairline" />
+			<g clip-path="url(#clip-base)">
+				<!-- Bars on top and bottom -->
+				<rect width="3"  height="16" x="0"  y="2"  style="fill:#c7dee8;stroke:none" />
+				<rect width="3"  height="16" x="27" y="2"  style="fill:#075474;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="17" style="fill:#075474;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="0"  style="fill:#c7dee8;stroke:none" />
+				<!-- Corners, gradient -->
+				<rect width="5"  height="5"  x="0"  y="0"  style="fill:url(#gradient-blue-top-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="0"  style="fill:url(#gradient-blue-top-right);stroke:none" />
+				<rect width="5"  height="5"  x="0"  y="15" style="fill:url(#gradient-blue-bottom-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="15" style="fill:url(#gradient-blue-bottom-right);stroke:none" />
+				<!-- Center filling -->
+				<rect opacity="1" x="1" y="1" height="18" width="28" rx="2.5" ry="2.5" stroke-width="1" stroke="none" fill="url(#gradient-blue-buttonfill)" />
+			</g>
+			<use xlink:href="#glint" />
+		</g>
+
+		<!-- Base red rectangle -->
+		<g id="base-red">
+			<use xlink:href="#hairline" />
+			<g clip-path="url(#clip-base)">
+				<!-- Bars on top and bottom -->
+				<rect width="3"  height="16" x="0"  y="2"  style="fill:#e48780;stroke:none" />
+				<rect width="3"  height="16" x="27" y="2"  style="fill:#601414;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="17" style="fill:#601414;stroke:none" />
+				<rect width="26" height="3"  x="2"  y="0"  style="fill:#e48780;stroke:none" />
+				<!-- Corners, gradient -->
+				<rect width="5"  height="5"  x="0"  y="0"  style="fill:url(#gradient-red-top-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="0"  style="fill:url(#gradient-red-top-right);stroke:none" />
+				<rect width="5"  height="5"  x="0"  y="15" style="fill:url(#gradient-red-bottom-left);stroke:none" />
+				<rect width="5"  height="5"  x="25" y="15" style="fill:url(#gradient-red-bottom-right);stroke:none" />
+				<!-- Center filling -->
+				<rect opacity="1" x="1" y="1" height="18" width="28" rx="2.5" ry="2.5" stroke-width="1" stroke="none" fill="url(#gradient-red-buttonfill)" />
+			</g>
+			<use xlink:href="#glint" />
+		</g>
+
+	</defs>
+</svg>
+<!--
+vim:ts=2:nowrap:ai
+-->
