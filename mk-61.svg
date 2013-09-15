@@ -372,6 +372,7 @@
 		<!-- Button 9 -->
 		<g id="button-9">
 			<use xlink:href="#base-grey" />
+			<path d="m 18,10 -5,0 c -2,0 -2,-1 -2,-1 l 0,-2 c 0,0 0,-1 2,-1 l 3,0 c 2,0 2,1 2,1 l 0,6 c 0,0 0,1 -2,1 l -3,0 c -2,0 -2,-1 -2,-1 l 0,-1" stroke-width="2" fill="none" stroke-opacity="0.85" stroke="black" />
 		</g>
 		<!-- Button minus -->
 		<g id="button-minus">
