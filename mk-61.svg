@@ -448,6 +448,7 @@
 		<!-- Button period -->
 		<g id="button-period">
 			<use xlink:href="#base-grey" />
+			<circle cx="15" cy="10" r="1" stroke="none" fill-opacity="0.85" fill="black" />
 		</g>
 		<!-- Button sign -->
 		<g id="button-sign">
