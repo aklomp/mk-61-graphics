@@ -468,6 +468,10 @@
 		<!-- Button SX -->
 		<g id="button-sx">
 			<use xlink:href="#base-red" />
+			<g stroke="white">
+				<path d="M 14,12 14,13 c 0,0 0,1 -2,1 l -3,0 c -2,0 -2,-1 -2,-1 l 0,-6 c 0,0 0,-1 2,-1 l 3,0 c 2,0 2,1 2,1 l 0,1" stroke-width="2" fill="none" stroke-opacity="0.85" />
+				<use x="16" y="0" xlink:href="#char-x" />
+			</g>
 		</g>
 
 	</defs>
