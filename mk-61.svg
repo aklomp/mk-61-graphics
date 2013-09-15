@@ -279,14 +279,25 @@
 		<!-- Button F -->
 		<g id="button-f">
 			<use xlink:href="#base-yellow" />
+			<use xlink:href="#char-f" stroke="black" />
 		</g>
 		<!-- Button ShG-right -->
 		<g id="button-shg-right">
 			<use xlink:href="#base-dark" />
+			<g stroke="white">
+				<use xlink:href="#char-sh" />
+				<use x="13" xlink:href="#char-g" />
+			</g>
+			<use y="-5" xlink:href="#char-arrow" fill="white"/>
 		</g>
 		<!-- Button ShG-left -->
 		<g id="button-shg-left">
 			<use xlink:href="#base-dark" />
+			<g stroke="white">
+				<use xlink:href="#char-sh" />
+				<use x="13" xlink:href="#char-g" />
+			</g>
+			<use x="-30" y="-5" xlink:href="#char-arrow" fill="white" transform="scale(-1,1)"/>
 		</g>
 		<!-- Button V/O -->
 		<g id="button-v-o">
@@ -300,22 +311,37 @@
 		<!-- Button K -->
 		<g id="button-k">
 			<use xlink:href="#base-blue" />
+			<use xlink:href="#char-k" stroke="white" />
 		</g>
 		<!-- Button P to X -->
 		<g id="button-p-to-x">
 			<use xlink:href="#base-dark" />
+			<g stroke="white">
+				<use x="0"  y="0" xlink:href="#char-narrow-p" />
+				<use x="17" y="0" xlink:href="#char-narrow-x" />
+			</g>
+			<use xlink:href="#char-arrow" fill="white" />
 		</g>
 		<!-- Button X to P -->
 		<g id="button-x-to-p">
 			<use xlink:href="#base-dark" />
+			<g stroke="white">
+				<use x="0"  y="0" xlink:href="#char-narrow-x" />
+				<use x="17" y="0" xlink:href="#char-narrow-p" />
+			</g>
+			<use xlink:href="#char-arrow" fill="white" />
 		</g>
 		<!-- Button BP -->
 		<g id="button-bp">
 			<use xlink:href="#base-dark" />
+			<use x="0"  y="0" xlink:href="#char-b" stroke="white" />
+			<use x="12" y="0" xlink:href="#char-p" stroke="white" />
 		</g>
 		<!-- Button PP -->
 		<g id="button-pp">
 			<use xlink:href="#base-dark" />
+			<use x="0"  y="0" xlink:href="#char-p" stroke="white" />
+			<use x="12" y="0" xlink:href="#char-p" stroke="white" />
 		</g>
 
 		<!-- Button 7 -->
@@ -396,6 +422,8 @@
 		<!-- Button VP -->
 		<g id="button-vp">
 			<use xlink:href="#base-grey" />
+			<use x="0" y="0" xlink:href="#char-v" stroke="black" />
+			<use x="12" y="0" xlink:href="#char-p" stroke="black" />
 		</g>
 		<!-- Button SX -->
 		<g id="button-sx">
