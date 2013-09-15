@@ -436,6 +436,8 @@
 		<!-- Button V-up -->
 		<g id="button-v-up">
 			<use xlink:href="#base-grey" />
+			<use x="4" y="0" xlink:href="#char-v" stroke="black" />
+			<path d="m 20,15 2,0 0,-5 1,0 -2,-6 -2,6 1,0 z" stroke="none" fill="black" fill-opacity="0.85" />
 		</g>
 
 		<!-- Button 0 -->
