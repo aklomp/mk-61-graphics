@@ -390,6 +390,7 @@
 		<!-- Button 4 -->
 		<g id="button-4">
 			<use xlink:href="#base-grey" />
+			<path d="m 19,13 -8,0 0,-1 5,-6 1,0 0,9" stroke-width="2" fill="none" stroke-opacity="0.85" stroke="black" />
 		</g>
 		<!-- Button 5 -->
 		<g id="button-5">
