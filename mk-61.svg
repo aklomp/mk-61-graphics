@@ -362,6 +362,7 @@
 		<!-- Button 7 -->
 		<g id="button-7">
 			<use xlink:href="#base-grey" />
+			<path d="m 10,6 9,0 0,1 -9,10" clip-path="url(#clip-chararea)" stroke-width="2" fill="none" stroke-opacity="0.85" stroke="black" />
 		</g>
 		<!-- Button 8 -->
 		<g id="button-8">
