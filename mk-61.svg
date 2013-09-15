@@ -405,6 +405,7 @@
 		<!-- Button plus -->
 		<g id="button-plus">
 			<use xlink:href="#base-grey" />
+			<path d="m 10,10 10,0 m -5,-5 0,10" stroke-width="2" fill="none" stroke-opacity="0.85" stroke="black" />
 		</g>
 		<!-- Button mul -->
 		<g id="button-mul">
