@@ -261,6 +261,27 @@
 			<use xlink:href="#base-dark" />
 		</g>
 
+		<!-- Button K -->
+		<g id="button-k">
+			<use xlink:href="#base-blue" />
+		</g>
+		<!-- Button P to X -->
+		<g id="button-p-to-x">
+			<use xlink:href="#base-dark" />
+		</g>
+		<!-- Button X to P -->
+		<g id="button-x-to-p">
+			<use xlink:href="#base-dark" />
+		</g>
+		<!-- Button BP -->
+		<g id="button-bp">
+			<use xlink:href="#base-dark" />
+		</g>
+		<!-- Button PP -->
+		<g id="button-pp">
+			<use xlink:href="#base-dark" />
+		</g>
+
 	</defs>
 </svg>
 <!--
