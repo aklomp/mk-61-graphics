@@ -475,6 +475,49 @@
 		</g>
 
 	</defs>
+
+	<!-- First row -->
+	<use x="0"   y="0" xlink:href="#button-f" />
+	<use x="40"  y="0" xlink:href="#button-shg-right" />
+	<use x="80"  y="0" xlink:href="#button-shg-left" />
+	<use x="120" y="0" xlink:href="#button-v-o" />
+	<use x="160" y="0" xlink:href="#button-s-p" />
+
+	<!-- Second row -->
+	<use x="0"   y="44" xlink:href="#button-k" />
+	<use x="40"  y="44" xlink:href="#button-p-to-x" />
+	<use x="80"  y="44" xlink:href="#button-x-to-p" />
+	<use x="120" y="44" xlink:href="#button-bp" />
+	<use x="160" y="44" xlink:href="#button-pp" />
+
+	<!-- Third row -->
+	<use x="0"   y="88" xlink:href="#button-7" />
+	<use x="40"  y="88" xlink:href="#button-8" />
+	<use x="80"  y="88" xlink:href="#button-9" />
+	<use x="120" y="88" xlink:href="#button-minus" />
+	<use x="160" y="88" xlink:href="#button-div" />
+
+	<!-- Fourth row -->
+	<use x="0"   y="132" xlink:href="#button-4" />
+	<use x="40"  y="132" xlink:href="#button-5" />
+	<use x="80"  y="132" xlink:href="#button-6" />
+	<use x="120" y="132" xlink:href="#button-plus" />
+	<use x="160" y="132" xlink:href="#button-mul" />
+
+	<!-- Fifth row -->
+	<use x="0"   y="176" xlink:href="#button-1" />
+	<use x="40"  y="176" xlink:href="#button-2" />
+	<use x="80"  y="176" xlink:href="#button-3" />
+	<use x="120" y="176" xlink:href="#button-swap" />
+	<use x="160" y="176" xlink:href="#button-v-up" />
+
+	<!-- Sixth row -->
+	<use x="0"   y="220" xlink:href="#button-0" />
+	<use x="40"  y="220" xlink:href="#button-period" />
+	<use x="80"  y="220" xlink:href="#button-sign" />
+	<use x="120" y="220" xlink:href="#button-vp" />
+	<use x="160" y="220" xlink:href="#button-sx" />
+
 </svg>
 <!--
 vim:ts=2:nowrap:ai
