@@ -377,6 +377,7 @@
 		<!-- Button minus -->
 		<g id="button-minus">
 			<use xlink:href="#base-grey" />
+			<path d="m 10,10 10,0" stroke-width="2" fill="none" stroke-opacity="0.85" stroke="black" />
 		</g>
 		<!-- Button div -->
 		<g id="button-div">
