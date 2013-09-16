@@ -4,7 +4,8 @@ all: \
   button-7 button-8 button-9 button-minus button-div \
   button-4 button-5 button-6 button-plus button-mul \
   button-1 button-2 button-3 button-swap button-v-up \
-  button-0 button-period button-sign button-vp button-sx
+  button-0 button-period button-sign button-vp button-sx \
+  button-sprite
 
 button-%: ../mk-61.svg
 	inkscape \
