@@ -274,7 +274,7 @@
 		<!-- Char slash -->
 		<path id="char-slash" d="m 10,3 -4,13" clip-path="url(#clip-chararea)" stroke-width="2" fill="none" stroke-opacity="0.85" />
 		<!-- Char longslash -->
-		<path id="char-longslash" d="m 9,3 -8,26" clip-path="url(#clip-chararea-long)" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<path id="char-longslash" d="m 9,3 -5,17" clip-path="url(#clip-chararea-long)" stroke-width="2" fill="none" stroke-opacity="0.85" />
 
 		<!-- Button F -->
 		<g id="button-f">
