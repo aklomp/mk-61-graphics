@@ -122,6 +122,14 @@
 			<stop style="stop-color:#601414" offset="1" />
 		</linearGradient>
 
+		<!-- This is the rectangle that forms the canvas on which the 30x20 px
+		     buttons are drawn. Buttons are drawn at the origin with a stroked
+		     outline, so this canvast extends by one pixel in all directions to
+		     provide room for it. This rectangle is intentionally unpainted. -->
+		<g id="base-canvas">
+			<rect x="-1" y="-1" width="32" height="22" style="fill:none;stroke:none"/>
+		</g>
+
 		<!-- Base rectangle as a clip path -->
 		<clipPath id="clip-base">
 			<rect width="30" height="20" rx="3.5" ry="3.5" />
@@ -142,6 +150,7 @@
 
 		<!-- Base grey rectangle -->
 		<g id="base-grey">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -162,6 +171,7 @@
 
 		<!-- Base dark rectangle -->
 		<g id="base-dark">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -182,6 +192,7 @@
 
 		<!-- Base yellow rectangle -->
 		<g id="base-yellow">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -202,6 +213,7 @@
 
 		<!-- Base blue rectangle -->
 		<g id="base-blue">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -222,6 +234,7 @@
 
 		<!-- Base red rectangle -->
 		<g id="base-red">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -274,7 +287,7 @@
 		<!-- Char slash -->
 		<path id="char-slash" d="m 10,3 -4,13" clip-path="url(#clip-chararea)" stroke-width="2" fill="none" stroke-opacity="0.85" />
 		<!-- Char longslash -->
-		<path id="char-longslash" d="m 9,3 -8,26" clip-path="url(#clip-chararea-long)" stroke-width="2" fill="none" stroke-opacity="0.85" />
+		<path id="char-longslash" d="m 9,3 -5,17" clip-path="url(#clip-chararea-long)" stroke-width="2" fill="none" stroke-opacity="0.85" />
 
 		<!-- Button F -->
 		<g id="button-f">
@@ -478,121 +491,90 @@
 
 	<!-- First row -->
 	<g fill="white">
-		<rect x="-1"  y="-1" width="32" height="22" id="frame-button-f" />
-		<rect x="39"  y="-1" width="32" height="22" id="frame-button-shg-right" />
-		<rect x="79"  y="-1" width="32" height="22" id="frame-button-shg-left" />
-		<rect x="119" y="-1" width="32" height="22" id="frame-button-v-o" />
-		<rect x="159" y="-1" width="32" height="22" id="frame-button-s-p" />
+		<use x="0"   y="0" xlink:href="#button-f" />
+		<use x="40"  y="0" xlink:href="#button-shg-right" />
+		<use x="80"  y="0" xlink:href="#button-shg-left" />
+		<use x="120" y="0" xlink:href="#button-v-o" />
+		<use x="160" y="0" xlink:href="#button-s-p" />
 	</g>
-	<use x="0"   y="0" xlink:href="#button-f" />
-	<use x="40"  y="0" xlink:href="#button-shg-right" />
-	<use x="80"  y="0" xlink:href="#button-shg-left" />
-	<use x="120" y="0" xlink:href="#button-v-o" />
-	<use x="160" y="0" xlink:href="#button-s-p" />
 
 	<!-- Second row -->
 	<g fill="white">
-		<rect x="-1"  y="43" width="32" height="22" id="frame-button-k" />
-		<rect x="39"  y="43" width="32" height="22" id="frame-button-p-to-x" />
-		<rect x="79"  y="43" width="32" height="22" id="frame-button-x-to-p" />
-		<rect x="119" y="43" width="32" height="22" id="frame-button-bp" />
-		<rect x="159" y="43" width="32" height="22" id="frame-button-pp" />
+		<use x="0"   y="44" xlink:href="#button-k" />
+		<use x="40"  y="44" xlink:href="#button-p-to-x" />
+		<use x="80"  y="44" xlink:href="#button-x-to-p" />
+		<use x="120" y="44" xlink:href="#button-bp" />
+		<use x="160" y="44" xlink:href="#button-pp" />
 	</g>
-	<use x="0"   y="44" xlink:href="#button-k" />
-	<use x="40"  y="44" xlink:href="#button-p-to-x" />
-	<use x="80"  y="44" xlink:href="#button-x-to-p" />
-	<use x="120" y="44" xlink:href="#button-bp" />
-	<use x="160" y="44" xlink:href="#button-pp" />
 
 	<!-- Third row -->
 	<g fill="white">
-		<rect x="-1"  y="87" width="32" height="22" id="frame-button-7" />
-		<rect x="39"  y="87" width="32" height="22" id="frame-button-8" />
-		<rect x="79"  y="87" width="32" height="22" id="frame-button-9" />
-		<rect x="119" y="87" width="32" height="22" id="frame-button-minus" />
-		<rect x="159" y="87" width="32" height="22" id="frame-button-div" />
+		<use x="0"   y="88" xlink:href="#button-7" />
+		<use x="40"  y="88" xlink:href="#button-8" />
+		<use x="80"  y="88" xlink:href="#button-9" />
+		<use x="120" y="88" xlink:href="#button-minus" />
+		<use x="160" y="88" xlink:href="#button-div" />
 	</g>
-	<use x="0"   y="88" xlink:href="#button-7" />
-	<use x="40"  y="88" xlink:href="#button-8" />
-	<use x="80"  y="88" xlink:href="#button-9" />
-	<use x="120" y="88" xlink:href="#button-minus" />
-	<use x="160" y="88" xlink:href="#button-div" />
 
 	<!-- Fourth row -->
 	<g fill="white">
-		<rect x="-1"  y="131" width="32" height="22" id="frame-button-4" />
-		<rect x="39"  y="131" width="32" height="22" id="frame-button-5" />
-		<rect x="79"  y="131" width="32" height="22" id="frame-button-6" />
-		<rect x="119" y="131" width="32" height="22" id="frame-button-plus" />
-		<rect x="159" y="131" width="32" height="22" id="frame-button-mul" />
+		<use x="0"   y="132" xlink:href="#button-4" />
+		<use x="40"  y="132" xlink:href="#button-5" />
+		<use x="80"  y="132" xlink:href="#button-6" />
+		<use x="120" y="132" xlink:href="#button-plus" />
+		<use x="160" y="132" xlink:href="#button-mul" />
 	</g>
-	<use x="0"   y="132" xlink:href="#button-4" />
-	<use x="40"  y="132" xlink:href="#button-5" />
-	<use x="80"  y="132" xlink:href="#button-6" />
-	<use x="120" y="132" xlink:href="#button-plus" />
-	<use x="160" y="132" xlink:href="#button-mul" />
 
 	<!-- Fifth row -->
 	<g fill="white">
-		<rect x="-1"  y="175" width="32" height="22" id="frame-button-1" />
-		<rect x="39"  y="175" width="32" height="22" id="frame-button-2" />
-		<rect x="79"  y="175" width="32" height="22" id="frame-button-3" />
-		<rect x="119" y="175" width="32" height="22" id="frame-button-swap" />
-		<rect x="159" y="175" width="32" height="22" id="frame-button-v-up" />
+		<use x="0"   y="176" xlink:href="#button-1" />
+		<use x="40"  y="176" xlink:href="#button-2" />
+		<use x="80"  y="176" xlink:href="#button-3" />
+		<use x="120" y="176" xlink:href="#button-swap" />
+		<use x="160" y="176" xlink:href="#button-v-up" />
 	</g>
-	<use x="0"   y="176" xlink:href="#button-1" />
-	<use x="40"  y="176" xlink:href="#button-2" />
-	<use x="80"  y="176" xlink:href="#button-3" />
-	<use x="120" y="176" xlink:href="#button-swap" />
-	<use x="160" y="176" xlink:href="#button-v-up" />
 
 	<!-- Sixth row -->
 	<g fill="white">
-		<rect x="-1"  y="219" width="32" height="22" id="frame-button-0" />
-		<rect x="39"  y="219" width="32" height="22" id="frame-button-period" />
-		<rect x="79"  y="219" width="32" height="22" id="frame-button-sign" />
-		<rect x="119" y="219" width="32" height="22" id="frame-button-vp" />
-		<rect x="159" y="219" width="32" height="22" id="frame-button-sx" />
+		<use x="0"   y="220" xlink:href="#button-0" />
+		<use x="40"  y="220" xlink:href="#button-period" />
+		<use x="80"  y="220" xlink:href="#button-sign" />
+		<use x="120" y="220" xlink:href="#button-vp" />
+		<use x="160" y="220" xlink:href="#button-sx" />
 	</g>
-	<use x="0"   y="220" xlink:href="#button-0" />
-	<use x="40"  y="220" xlink:href="#button-period" />
-	<use x="80"  y="220" xlink:href="#button-sign" />
-	<use x="120" y="220" xlink:href="#button-vp" />
-	<use x="160" y="220" xlink:href="#button-sx" />
 
-	<!-- Sprite block (all keys rendered close to each other -->
-	<g transform="translate(500,0)">
-		<rect x="-1" y="-1" width="164" height="137" id="frame-button-sprite" fill="white" />
+	<!-- Sprite block (all keys rendered close to each other) -->
+	<g transform="translate(500,0)" id="button-sprite">
 		<use x="0"   y="0"   xlink:href="#button-f" />
-		<use x="33"  y="0"   xlink:href="#button-shg-right" />
-		<use x="66"  y="0"   xlink:href="#button-shg-left" />
-		<use x="99"  y="0"   xlink:href="#button-v-o" />
-		<use x="132" y="0"   xlink:href="#button-s-p" />
-		<use x="0"   y="23"  xlink:href="#button-k" />
-		<use x="33"  y="23"  xlink:href="#button-p-to-x" />
-		<use x="66"  y="23"  xlink:href="#button-x-to-p" />
-		<use x="99"  y="23"  xlink:href="#button-bp" />
-		<use x="132" y="23"  xlink:href="#button-pp" />
-		<use x="0"   y="46"  xlink:href="#button-7" />
-		<use x="33"  y="46"  xlink:href="#button-8" />
-		<use x="66"  y="46"  xlink:href="#button-9" />
-		<use x="99"  y="46"  xlink:href="#button-minus" />
-		<use x="132" y="46"  xlink:href="#button-div" />
-		<use x="0"   y="69"  xlink:href="#button-4" />
-		<use x="33"  y="69"  xlink:href="#button-5" />
-		<use x="66"  y="69"  xlink:href="#button-6" />
-		<use x="99"  y="69"  xlink:href="#button-plus" />
-		<use x="132" y="69"  xlink:href="#button-mul" />
-		<use x="0"   y="92"  xlink:href="#button-1" />
-		<use x="33"  y="92"  xlink:href="#button-2" />
-		<use x="66"  y="92"  xlink:href="#button-3" />
-		<use x="99"  y="92"  xlink:href="#button-swap" />
-		<use x="132" y="92"  xlink:href="#button-v-up" />
-		<use x="0"   y="115" xlink:href="#button-0" />
-		<use x="33"  y="115" xlink:href="#button-period" />
-		<use x="66"  y="115" xlink:href="#button-sign" />
-		<use x="99"  y="115" xlink:href="#button-vp" />
-		<use x="132" y="115" xlink:href="#button-sx" />
+		<use x="32"  y="0"   xlink:href="#button-shg-right" />
+		<use x="64"  y="0"   xlink:href="#button-shg-left" />
+		<use x="96"  y="0"   xlink:href="#button-v-o" />
+		<use x="128" y="0"   xlink:href="#button-s-p" />
+		<use x="0"   y="22"  xlink:href="#button-k" />
+		<use x="32"  y="22"  xlink:href="#button-p-to-x" />
+		<use x="64"  y="22"  xlink:href="#button-x-to-p" />
+		<use x="96"  y="22"  xlink:href="#button-bp" />
+		<use x="128" y="22"  xlink:href="#button-pp" />
+		<use x="0"   y="44"  xlink:href="#button-7" />
+		<use x="32"  y="44"  xlink:href="#button-8" />
+		<use x="64"  y="44"  xlink:href="#button-9" />
+		<use x="96"  y="44"  xlink:href="#button-minus" />
+		<use x="128" y="44"  xlink:href="#button-div" />
+		<use x="0"   y="66"  xlink:href="#button-4" />
+		<use x="32"  y="66"  xlink:href="#button-5" />
+		<use x="64"  y="66"  xlink:href="#button-6" />
+		<use x="96"  y="66"  xlink:href="#button-plus" />
+		<use x="128" y="66"  xlink:href="#button-mul" />
+		<use x="0"   y="88"  xlink:href="#button-1" />
+		<use x="32"  y="88"  xlink:href="#button-2" />
+		<use x="64"  y="88"  xlink:href="#button-3" />
+		<use x="96"  y="88"  xlink:href="#button-swap" />
+		<use x="128" y="88"  xlink:href="#button-v-up" />
+		<use x="0"   y="110" xlink:href="#button-0" />
+		<use x="32"  y="110" xlink:href="#button-period" />
+		<use x="64"  y="110" xlink:href="#button-sign" />
+		<use x="96"  y="110" xlink:href="#button-vp" />
+		<use x="128" y="110" xlink:href="#button-sx" />
 	</g>
 
 </svg>

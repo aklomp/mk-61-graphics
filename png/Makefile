@@ -1,19 +1,31 @@
-all: \
-  button-f button-shg-right button-shg-left button-v-o button-s-p \
-  button-k button-p-to-x button-x-to-p button-bp button-pp \
-  button-7 button-8 button-9 button-minus button-div \
-  button-4 button-5 button-6 button-plus button-mul \
-  button-1 button-2 button-3 button-swap button-v-up \
-  button-0 button-period button-sign button-vp button-sx \
-  button-sprite
+# List all buttons by row. Use the IDs in the SVG file, without the `button-'
+# prefix.
+IDS :=   f   shg-right   shg-left   v-o     s-p
+IDS +=   k   p-to-x      x-to-p     bp      pp
+IDS +=   7   8           9          minus   div
+IDS +=   4   5           6          plus    mul
+IDS +=   1   2           3          swap    v-up
+IDS +=   0   period      sign       vp      sx
 
-button-%: ../mk-61.svg
-	inkscape \
-	  --export-png=temp.png \
-	  --export-id=frame-$@ \
-	  --export-dpi=360 \
+# The `sprite' button is a pseudo-button that consists of all other buttons
+# laid out tightly together to form a sprite image.
+IDS += sprite
+
+# Create the list of PNG files to produce.
+PNGS := $(patsubst %,button-%.png,$(IDS))
+
+.PHONY: all clean
+
+all: $(PNGS)
+
+%.png: ../mk-61.svg
+	rsvg-convert \
+	  --background-color white \
+	  --export-id $* \
+	  --output tmp.png \
 	  $^
-	pngtopnm < temp.png | pamscale 0.25 | pnmtopng > $@.png
-	rm temp.png
-	advpng -z4 $@.png
-	pngout $@.png || true
+	pngcrush -brute tmp.png $@
+	$(RM) tmp.png
+
+clean:
+	$(RM) $(PNGS)
