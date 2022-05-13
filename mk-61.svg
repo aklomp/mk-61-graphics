@@ -543,39 +543,38 @@
 		<use x="160" y="220" xlink:href="#button-sx" />
 	</g>
 
-	<!-- Sprite block (all keys rendered close to each other -->
-	<g transform="translate(500,0)">
-		<rect x="-1" y="-1" width="164" height="137" id="frame-button-sprite" fill="white" />
+	<!-- Sprite block (all keys rendered close to each other) -->
+	<g transform="translate(500,0)" id="button-sprite">
 		<use x="0"   y="0"   xlink:href="#button-f" />
-		<use x="33"  y="0"   xlink:href="#button-shg-right" />
-		<use x="66"  y="0"   xlink:href="#button-shg-left" />
-		<use x="99"  y="0"   xlink:href="#button-v-o" />
-		<use x="132" y="0"   xlink:href="#button-s-p" />
-		<use x="0"   y="23"  xlink:href="#button-k" />
-		<use x="33"  y="23"  xlink:href="#button-p-to-x" />
-		<use x="66"  y="23"  xlink:href="#button-x-to-p" />
-		<use x="99"  y="23"  xlink:href="#button-bp" />
-		<use x="132" y="23"  xlink:href="#button-pp" />
-		<use x="0"   y="46"  xlink:href="#button-7" />
-		<use x="33"  y="46"  xlink:href="#button-8" />
-		<use x="66"  y="46"  xlink:href="#button-9" />
-		<use x="99"  y="46"  xlink:href="#button-minus" />
-		<use x="132" y="46"  xlink:href="#button-div" />
-		<use x="0"   y="69"  xlink:href="#button-4" />
-		<use x="33"  y="69"  xlink:href="#button-5" />
-		<use x="66"  y="69"  xlink:href="#button-6" />
-		<use x="99"  y="69"  xlink:href="#button-plus" />
-		<use x="132" y="69"  xlink:href="#button-mul" />
-		<use x="0"   y="92"  xlink:href="#button-1" />
-		<use x="33"  y="92"  xlink:href="#button-2" />
-		<use x="66"  y="92"  xlink:href="#button-3" />
-		<use x="99"  y="92"  xlink:href="#button-swap" />
-		<use x="132" y="92"  xlink:href="#button-v-up" />
-		<use x="0"   y="115" xlink:href="#button-0" />
-		<use x="33"  y="115" xlink:href="#button-period" />
-		<use x="66"  y="115" xlink:href="#button-sign" />
-		<use x="99"  y="115" xlink:href="#button-vp" />
-		<use x="132" y="115" xlink:href="#button-sx" />
+		<use x="32"  y="0"   xlink:href="#button-shg-right" />
+		<use x="64"  y="0"   xlink:href="#button-shg-left" />
+		<use x="96"  y="0"   xlink:href="#button-v-o" />
+		<use x="128" y="0"   xlink:href="#button-s-p" />
+		<use x="0"   y="22"  xlink:href="#button-k" />
+		<use x="32"  y="22"  xlink:href="#button-p-to-x" />
+		<use x="64"  y="22"  xlink:href="#button-x-to-p" />
+		<use x="96"  y="22"  xlink:href="#button-bp" />
+		<use x="128" y="22"  xlink:href="#button-pp" />
+		<use x="0"   y="44"  xlink:href="#button-7" />
+		<use x="32"  y="44"  xlink:href="#button-8" />
+		<use x="64"  y="44"  xlink:href="#button-9" />
+		<use x="96"  y="44"  xlink:href="#button-minus" />
+		<use x="128" y="44"  xlink:href="#button-div" />
+		<use x="0"   y="66"  xlink:href="#button-4" />
+		<use x="32"  y="66"  xlink:href="#button-5" />
+		<use x="64"  y="66"  xlink:href="#button-6" />
+		<use x="96"  y="66"  xlink:href="#button-plus" />
+		<use x="128" y="66"  xlink:href="#button-mul" />
+		<use x="0"   y="88"  xlink:href="#button-1" />
+		<use x="32"  y="88"  xlink:href="#button-2" />
+		<use x="64"  y="88"  xlink:href="#button-3" />
+		<use x="96"  y="88"  xlink:href="#button-swap" />
+		<use x="128" y="88"  xlink:href="#button-v-up" />
+		<use x="0"   y="110" xlink:href="#button-0" />
+		<use x="32"  y="110" xlink:href="#button-period" />
+		<use x="64"  y="110" xlink:href="#button-sign" />
+		<use x="96"  y="110" xlink:href="#button-vp" />
+		<use x="128" y="110" xlink:href="#button-sx" />
 	</g>
 
 </svg>
