@@ -122,6 +122,14 @@
 			<stop style="stop-color:#601414" offset="1" />
 		</linearGradient>
 
+		<!-- This is the rectangle that forms the canvas on which the 30x20 px
+		     buttons are drawn. Buttons are drawn at the origin with a stroked
+		     outline, so this canvast extends by one pixel in all directions to
+		     provide room for it. This rectangle is intentionally unpainted. -->
+		<g id="base-canvas">
+			<rect x="-1" y="-1" width="32" height="22" style="fill:none;stroke:none"/>
+		</g>
+
 		<!-- Base rectangle as a clip path -->
 		<clipPath id="clip-base">
 			<rect width="30" height="20" rx="3.5" ry="3.5" />
@@ -142,6 +150,7 @@
 
 		<!-- Base grey rectangle -->
 		<g id="base-grey">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -162,6 +171,7 @@
 
 		<!-- Base dark rectangle -->
 		<g id="base-dark">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -182,6 +192,7 @@
 
 		<!-- Base yellow rectangle -->
 		<g id="base-yellow">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -202,6 +213,7 @@
 
 		<!-- Base blue rectangle -->
 		<g id="base-blue">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
@@ -222,6 +234,7 @@
 
 		<!-- Base red rectangle -->
 		<g id="base-red">
+			<use xlink:href="#base-canvas" />
 			<use xlink:href="#hairline" />
 			<g clip-path="url(#clip-base)">
 				<!-- Bars on top and bottom -->
