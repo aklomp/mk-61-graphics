@@ -18,7 +18,7 @@ PNGS := $(patsubst %,button-%.png,$(IDS))
 
 all: $(PNGS)
 
-%.png: ../mk-61.svg
+%.png: mk-61.svg
 	rsvg-convert \
 	  --background-color white \
 	  --export-id $* \
