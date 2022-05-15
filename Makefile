@@ -13,6 +13,7 @@ OUTDIR := out
 # Output directories for PNGs with white and alpha backgrounds.
 DIR_ALPHA := $(OUTDIR)/png/alpha
 DIR_WHITE := $(OUTDIR)/png/white
+DIR_SVG   := $(OUTDIR)/svg
 
 # Create the filenames for the PNGs with alpha background.
 PNG_ALPHA := $(patsubst %,$(DIR_ALPHA)/button-%.png,$(IDS))
@@ -26,19 +27,23 @@ PNG_WHITE := $(patsubst %,$(DIR_WHITE)/button-%.png,$(IDS))
 PNG_ALPHA += $(DIR_ALPHA)/button-sprite.png
 PNG_WHITE += $(DIR_WHITE)/button-sprite.png
 
+# Create the filenames for the SVGs.
+SVG := $(patsubst %,$(DIR_SVG)/button-%.svg,$(IDS))
+
 .PHONY: all clean
 
-# Default rule: create both sets of PNGs.
-all: $(PNG_ALPHA) $(PNG_WHITE)
+# Default rule: create SVGs and both sets of PNGs.
+all: $(PNG_ALPHA) $(PNG_WHITE) $(SVG)
 
 # Rule to create the output directories.
-$(DIR_ALPHA) $(DIR_WHITE):
+$(DIR_ALPHA) $(DIR_WHITE) $(DIR_SVG):
 	mkdir -p $@
 
 # Output files depend on the existence of their output directory. This
 # dependency is order-only, the modification time does not need to be checked.
 $(PNG_ALPHA): | $(DIR_ALPHA)
 $(PNG_WHITE): | $(DIR_WHITE)
+$(SVG):       | $(DIR_SVG)
 
 # Set the background color for each PNG output type.
 $(PNG_ALPHA): BACKGROUND=none
@@ -53,6 +58,14 @@ out/%.png: mk-61.svg
 	  $<
 	pngcrush -brute tmp.png $@
 	$(RM) tmp.png
+
+# Generate the SVGs.
+$(DIR_SVG)/%.svg: mk-61.svg
+	rsvg-convert \
+	  --export-id $* \
+	  --format svg \
+	  --output $@ \
+	  $<
 
 clean:
 	$(RM) -r $(OUTDIR)
